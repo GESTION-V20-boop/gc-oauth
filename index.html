@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Connexion Google</title></head>
+<body style="font-family:sans-serif;text-align:center;padding:40px 20px">
+<h2>Connexion Google réussie ✅</h2>
+<p>Retour vers Gestion Collège…</p>
+<p><a id="b" href="#" style="display:inline-block;padding:14px 22px;background:#1a73e8;color:#fff;border-radius:8px;text-decoration:none;font-size:18px">Ouvrir Gestion Collège</a></p>
+<script>
+var u = 'mg.college.gestion://oauth' + location.hash;
+document.getElementById('b').href = u;
+if (location.hash.length > 1) setTimeout(function () { location.href = u; }, 400);
+</script>
+</body></html>
